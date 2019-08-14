@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Ordered_By_Costomer",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Order By Customer extension shows the names and location of customers who ordered the product recently.",
+    "authors": [
+    {
+        "name": "Arvind Bhardwaj",
+        "email": "bhardwajsonheight@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

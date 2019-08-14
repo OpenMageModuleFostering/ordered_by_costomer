@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Ordered_By_Costomer</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Order By Customer extension shows the names and location of customers who ordered the product recently.</summary>
+    <description>Order By Customer extension shows the name and location of customers who ordered the product recently. The block is displayed on the product detail page. So the customer can be assured that the product is being purchased by other customers also.</description>
+    <notes>Stable version released.</notes>
+    <authors><author><name>Arvind Bhardwaj</name><user>Arvind07</user><email>bhardwajsonheight@gmail.com</email></author></authors>
+    <date>2013-03-28</date>
+    <time>07:32:03</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Arvobc_Obc.xml" hash="a4ceaea65c2cc0b9432b8ee26ff65908"/></dir></target><target name="magelocal"><dir name="Arvobc"><dir name="Obc"><dir name="Block"><file name="Obc.php" hash="17a131923982ff8f3e2b445e0470b9ab"/></dir><dir name="Helper"><file name="Data.php" hash="cdcbb121d6545d14440640c40dd2e22f"/></dir><dir name="Model"><file name="Obc.php" hash="f1e05ee73f49db968044213640e7204e"/><file name="Observer.php" hash="6377fa5f998ae2086c4eb15a91fd1e4b"/></dir><dir name="controllers"><file name="IndexController.php" hash="bf429fe6f515f93c2c2f62e6f4266221"/></dir><dir name="etc"><file name="adminhtml.xml" hash="bb2f3a7af1dc396210299f973ba9b7a7"/><file name="config.xml" hash="bc353f95a3083bf110732b8d75abff2e"/><file name="system.xml" hash="137300a027d3b8d65c8a52caa98d99ff"/></dir></dir></dir><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="obc.xml" hash=""/></dir><dir name="template"><dir name="obc"><file name="obc.phtml" hash=""/></dir></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="obc.xml" hash="4bf2caa9f6de7e1ea044dc3bbff74afb"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

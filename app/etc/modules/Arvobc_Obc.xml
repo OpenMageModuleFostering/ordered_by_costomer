@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Arvobc_Obc>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Arvobc_Obc>
+    </modules>
+</config> 

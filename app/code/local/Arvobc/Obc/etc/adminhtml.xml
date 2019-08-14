@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <obcconfig translate="title" module="obc">
+                                        <title>Ordered By Config</title>
+                                        <sort_order>100</sort_order>
+                                    </obcconfig>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                 </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
