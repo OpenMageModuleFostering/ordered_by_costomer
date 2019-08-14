@@ -1,0 +1,47 @@
+<?php
+$config = $this->getObcConfigs();
+
+if ($config['obc_enabled']) {
+
+$orderIds = $this->getOrderIds();
+?>
+
+<?php if ($orderIds['totalRecords']): ?>
+<?php $orderCollection = $this->getOrderCollection($orderIds) ?>
+<div class="block block-cart">
+    <?php $_cartQty = $this->getSummaryCount() ?>
+    <div class="block-title">
+        <strong><span><?php echo $this->__('Recently Orderd By') ?></span></strong>
+    </div>
+    <div class="block-content">
+    <?php $_items = $this->getRecentItems() ?>
+    <?php if($orderCollection->count()): ?>
+        <ol id="obc_box" class="mini-products-list">
+        <?php foreach ($orderCollection as $order): ?>
+			<?php $customer = Mage::getModel('customer/customer')->load($order->getCustomerId()); ?>
+			<p class="empty product-name">
+				<?php echo $customer->getFirstname(). ' ' .$customer->getLastname() ?>
+				<?php if ($config['obc_showaddress']): ?>
+					<?php $address = $order->getShippingAddress()->getData() ?>
+					<?php echo ', ' . $address['city'] ?>
+				<?php endif; ?>
+				<?php if ($config['obc_showdate']): ?>
+					<?php $date = $order->getCreatedAt() ?>
+					<?php $interval = $this->format_interval($date) ?>
+					<p class="empty right">
+						<?php echo $interval ?>
+					</p>
+				<?php endif; ?>
+			</p>
+        <?php endforeach; ?>
+        </ol>
+        <script type="text/javascript">decorateList('obc_box', 'none-recursive')</script>
+    <?php else: ?>
+        <p class="empty"><?php echo $this->__('You have no items in your shopping cart.') ?></p>
+    <?php endif ?>
+    </div>
+</div>
+<?php endif;?>
+<?php
+}
+?>

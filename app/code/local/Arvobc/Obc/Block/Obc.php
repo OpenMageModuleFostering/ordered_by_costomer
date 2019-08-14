@@ -19,6 +19,9 @@ class Arvobc_Obc_Block_Obc extends Mage_Core_Block_Template
 	 * Get all unique order IDs for items with a particular ID.
 	 */
 	public function getOrderIds() {
+		if (!Mage::registry('current_product')) {
+			return;
+		}
 		$product_id = Mage::registry('current_product')->getId();
 		$orderItems = Mage::getResourceModel('sales/order_item_collection')
 					->addFieldToFilter('product_id', $product_id)
@@ -60,7 +63,7 @@ class Arvobc_Obc_Block_Obc extends Mage_Core_Block_Template
 		return $configs;
 	}
 
-	public function format_interval($first_date, $second_date) {
+	public function format_interval($first_date, $second_date='') {
 		$second_date = date('Y-m-d H:i:s');
 		$first_date = new DateTime($first_date);
 		$second_date = new DateTime($second_date);
