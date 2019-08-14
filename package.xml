@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>Ordered_By_Costomer</name>
-    <version>0.1.2</version>
+    <version>0.1.4</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
     <channel>community</channel>
     <extends/>
     <summary>Order By Customer extension shows the names and location of customers who ordered the product recently.</summary>
     <description>Order By Customer extension shows the name and location of customers who ordered the product recently. The block is displayed on the product detail page. So the customer can be assured that the product is being purchased by other customers also.</description>
-    <notes>Slider added to the list of customers.</notes>
+    <notes>Small layout bug fixed</notes>
     <authors><author><name>Arvind Bhardwaj</name><user>Arvind07</user><email>bhardwajsonheight@gmail.com</email></author></authors>
     <date>2013-04-01</date>
-    <time>07:00:38</time>
-    <contents><target name="mageetc"><dir name="modules"><file name="Arvobc_Obc.xml" hash="a4ceaea65c2cc0b9432b8ee26ff65908"/></dir></target><target name="magelocal"><dir name="Arvobc"><dir name="Obc"><dir name="Block"><file name="Obc.php" hash="7e711c15641f55712257b36fe24e5a3a"/></dir><dir name="Helper"><file name="Data.php" hash="cdcbb121d6545d14440640c40dd2e22f"/></dir><dir name="Model"><file name="Obc.php" hash="f1e05ee73f49db968044213640e7204e"/><file name="Observer.php" hash="69bfb02b24e394f9f18272d31e5d0d41"/></dir><dir name="controllers"><file name="IndexController.php" hash="bf429fe6f515f93c2c2f62e6f4266221"/></dir><dir name="etc"><file name="adminhtml.xml" hash="bb2f3a7af1dc396210299f973ba9b7a7"/><file name="config.xml" hash="9a5cb5a6d7d765f31059ddded41d1d6a"/><file name="system.xml" hash="137300a027d3b8d65c8a52caa98d99ff"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="obc.xml" hash="fadb16f015b59ab7488fdd8cc1588d15"/></dir></dir></dir></dir><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="obc.xml" hash="9c66d8f8f1e1c70b0b3f178b18292569"/></dir><dir name="template"><dir name="obc"><file name="obc.phtml" hash="bbaca8bfb42da0d9f16968f34688b885"/></dir></dir></dir></dir></dir></target></contents>
+    <time>07:26:16</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Arvobc_Obc.xml" hash="a4ceaea65c2cc0b9432b8ee26ff65908"/></dir></target><target name="magelocal"><dir name="Arvobc"><dir name="Obc"><dir name="Block"><file name="Obc.php" hash="7e711c15641f55712257b36fe24e5a3a"/></dir><dir name="Helper"><file name="Data.php" hash="cdcbb121d6545d14440640c40dd2e22f"/></dir><dir name="Model"><file name="Obc.php" hash="f1e05ee73f49db968044213640e7204e"/><file name="Observer.php" hash="69bfb02b24e394f9f18272d31e5d0d41"/></dir><dir name="controllers"><file name="IndexController.php" hash="bf429fe6f515f93c2c2f62e6f4266221"/></dir><dir name="etc"><file name="adminhtml.xml" hash="bb2f3a7af1dc396210299f973ba9b7a7"/><file name="config.xml" hash="13fdf4bbcf4e7aa3f2b89b0d75969fa0"/><file name="system.xml" hash="137300a027d3b8d65c8a52caa98d99ff"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="obc.xml" hash="5b1d1b2477fe2dea4ff8b79885a7c021"/></dir></dir></dir></dir><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="obc.xml" hash="0a3edd647a1f94dab8df371b28922f37"/></dir><dir name="template"><dir name="obc"><file name="obc.phtml" hash="47cb58a2917642d291fc72194c572e0c"/></dir></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
