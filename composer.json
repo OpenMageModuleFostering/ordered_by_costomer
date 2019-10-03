@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Ordered_By_Costomer",
+    "name": "openmage-module-fostering\/ordered_by_costomer",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Order By Customer extension shows the names and location of customers who ordered the product recently.",
     "authors": [
